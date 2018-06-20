@@ -1,0 +1,42 @@
+@import "../variables.scss";
+:host {
+  display: grid;
+}
+
+nav {
+  height: 100vh;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+main{
+  height: 100vh;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+@media #{$small-and-down} {
+  :host{
+    grid-template-columns: 1fr 3fr ;
+  }
+}
+@media #{$medium-and-up} {
+  :host{
+    grid-template-columns: 1fr 3fr ;
+  }
+}
+@media #{$large-and-up} {
+  :host{
+    grid-template-columns: 1fr 4fr ;
+  }
+}
+@media #{$extra-large-and-up} {
+  :host{
+    grid-template-columns: 1fr 5fr ;
+  }
+}
+
+@media #{$ultra-wide-and-up} {
+  :host{
+    grid-template-columns: 1fr 6fr ;
+  }
+}

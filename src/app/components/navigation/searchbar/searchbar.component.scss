@@ -1,0 +1,12 @@
+@import "../../../../variables.scss";
+.search{
+  background-color: $main-color;
+  height: 5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.icon{
+  margin-right: 2rem;
+  height: 90%;
+}
