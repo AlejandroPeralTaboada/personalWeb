@@ -1,0 +1,21 @@
+@import "../../../../../variables.scss";
+
+.navItem{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid $contrast-color;
+}
+
+.navItem:last-of-type{
+  border-bottom: 1px solid $contrast-color;
+}
+
+.icon{
+  margin-left: 15px;
+  height: 80%;
+}
+
+svg{
+  fill: $contrast-color;
+}

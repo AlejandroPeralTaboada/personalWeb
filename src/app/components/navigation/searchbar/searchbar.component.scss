@@ -1,7 +1,7 @@
 @import "../../../../variables.scss";
 .search{
   background-color: $main-color;
-  height: 5em;
+  height: $navbar-height;
   display: flex;
   justify-content: flex-end;
   align-items: center;
