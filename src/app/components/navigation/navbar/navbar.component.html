@@ -1,5 +1,5 @@
 <div>
   <app-nav-title></app-nav-title>
-  <app-navbar-item></app-navbar-item>
-  <app-navbar-item></app-navbar-item>
+  <app-navbar-item [menuName]="'Home'" (menuClicked)="menuClicked($event)"></app-navbar-item>
+  <app-navbar-item [menuName]="'Home'" (menuClicked)="menuClicked($event)"></app-navbar-item>
 </div>
