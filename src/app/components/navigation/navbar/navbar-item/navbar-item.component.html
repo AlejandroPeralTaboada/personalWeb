@@ -1,4 +1,6 @@
 <div class="navItem" (click)="clicked()">
-    <svg class="icon"><use xlink:href="#home"/></svg>
-    <h3>Home</h3>
+  <svg class="icon">
+    <use [attr.xlink:href]="'#'+iconName" />
+  </svg>
+  <h3>{{menuName}}</h3>
 </div>

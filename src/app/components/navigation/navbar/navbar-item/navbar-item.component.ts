@@ -7,6 +7,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 })
 export class NavbarItemComponent implements OnInit {
   @Input() menuName: String;
+  @Input() iconName: String;
   @Output() menuClicked: EventEmitter<String> = new EventEmitter();
 
   constructor() {}
