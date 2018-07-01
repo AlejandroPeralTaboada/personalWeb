@@ -5,6 +5,14 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: './components/home/home.module#HomeModule'
+  },
+  {
+    path: 'home',
+    loadChildren: './components/home/home.module#HomeModule'
+  },
+  {
+    path: 'technologies',
+    loadChildren: './components/technologies/technologies.module#TechnologiesModule'
   }
 ];
 
@@ -12,4 +20,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

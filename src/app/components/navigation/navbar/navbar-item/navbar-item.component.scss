@@ -1,26 +1,27 @@
-@import "../../../../../variables.scss";
+@import '../../../../../variables.scss';
 
-.navItem{
+.navItem {
   height: 50px;
   display: flex;
   align-items: center;
   border-top: 1px solid $contrast-color;
+  cursor: pointer;
 }
 
-.navItem:last-of-type{
+.navItem:last-of-type {
   border-bottom: 1px solid $contrast-color;
 }
 
-.icon{
+.icon {
   margin-left: 15px;
   height: 80%;
   width: 30px;
 }
 
-svg{
+svg {
   fill: $contrast-color;
 }
 
-h3{
+h3 {
   margin-left: 10px;
 }

@@ -3,10 +3,8 @@ import { CommonModule } from '@angular/common';
 import { NavigationModule } from '../components/navigation/navigation.module';
 
 @NgModule({
-  imports: [
-    CommonModule, NavigationModule
-  ],
+  imports: [CommonModule, NavigationModule],
   declarations: [],
-  exports: [ NavigationModule]
+  exports: [NavigationModule]
 })
-export class SharedModule { }
+export class SharedModule {}
