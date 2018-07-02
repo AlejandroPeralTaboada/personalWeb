@@ -1,16 +1,30 @@
 @import "../../../../variables.scss";
-.search{
+.search {
   background-color: $main-color;
   height: $navbar-height;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.icon{
+
+.icon {
   margin-right: 2rem;
   height: 90%;
 }
 
-svg{
+svg {
   fill: $contrast-color;
+}
+
+.title {
+  visibility: hidden;
+}
+
+@media #{$small-and-down} {
+  .title {
+    visibility: visible;
+  }
+  .search {
+    justify-content: flex-start;
+  }
 }

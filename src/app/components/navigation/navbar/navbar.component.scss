@@ -1,8 +1,13 @@
 @import "../../../../variables.scss";
-
-div{
+.navbar {
   height: 100vh;
   background-color: $navbar-background-color;
   color: $contrast-color;
 }
 
+@media #{$small-and-down} {
+  .navbar {
+    position: fixed;
+    visibility: hidden;
+  }
+}

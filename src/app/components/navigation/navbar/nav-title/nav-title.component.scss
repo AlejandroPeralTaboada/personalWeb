@@ -17,6 +17,12 @@
   background-color: $main-color;
 }
 
+@media #{$small-and-down} {
+  .menu:nth-of-type(2) {
+    background-color: $navbar-background-color;
+  }
+}
+
 .hamburguer {
   margin-left: 10px;
 }

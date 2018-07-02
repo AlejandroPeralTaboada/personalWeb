@@ -8,6 +8,7 @@ nav {
   grid-column-start: 1;
   grid-column-end: 1;
 }
+
 main {
   height: 100vh;
   grid-column-start: 2;
@@ -16,19 +17,22 @@ main {
 
 @media #{$small-and-down} {
   :host {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0fr 1fr;
   }
 }
+
 @media #{$medium-and-up} {
   :host {
     grid-template-columns: 2fr 4fr;
   }
 }
+
 @media #{$large-and-up} {
   :host {
     grid-template-columns: 2fr 5fr;
   }
 }
+
 @media #{$extra-large-and-up} {
   :host {
     grid-template-columns: 2fr 9fr;
