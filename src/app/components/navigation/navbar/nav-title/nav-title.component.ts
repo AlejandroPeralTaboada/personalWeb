@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-nav-title',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-title.component.scss']
 })
 export class NavTitleComponent implements OnInit {
+  @Output()
+  toggleClick = new EventEmitter<Boolean>();
 
-  constructor() { }
+  private state = false;
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  public clicked() {
+    this.state = !this.state;
+    this.toggleClick.emit(this.state);
   }
-
 }

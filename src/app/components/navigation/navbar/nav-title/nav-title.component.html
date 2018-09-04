@@ -1,5 +1,5 @@
-<div class="title">
-  <div class="hamburguer">
+<div class="title" [ngClass]="{clicked: state}">
+  <div class="hamburguer" (click)=clicked()>
     <div class="menu"></div>
     <div class="menu"></div>
     <div class="menu"></div>
